@@ -19,12 +19,12 @@ def get_filters():
     
     print('\nNext, let\'s choose our calendar filter.')
     
-    #get the month filter from the users and check it against the months list
+    # get the month filter from the users and check it against the months list
     month = input('Which month do you want to report on? (January to June, or ENTER for any):').lower() or 'any'
     while month not in months and month != 'any':
         month = input('Please input a valid month? (or ENTER for any):').lower() or 'any'
     
-    #get the weekday filter from the users and check if against the days list
+    # get the weekday filter from the users and check if against the days list
     day = input('Which day of the week do you want to report on? (or ENTER for any):').lower() or 'any'
     while day not in days and day != 'any':
         day = input('Please input a valid weekday? (or ENTER for any):').lower() or 'any'
