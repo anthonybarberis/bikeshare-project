@@ -1,8 +1,8 @@
 ### Date created
-Include the date you created this project and README file.
+June 29th, 2019
 
 ### Project Title
-Replace the Project Title
+Project 3 - Post Your Work on GitHub
 
 ### Description
 Describe what your project is about and what it does
