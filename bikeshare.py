@@ -5,8 +5,8 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
-months = ['january', 'february', 'march', 'april', 'may', 'june']
-days = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday']
+MONTH_NAMES = ['january', 'february', 'march', 'april', 'may', 'june']
+DAY_NAMES = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday']
 
 def get_filters():
    
@@ -19,14 +19,14 @@ def get_filters():
     
     print('\nNext, let\'s choose our calendar filter.')
     
-    #get the month filter from the users and check it against the months list
+    #get the month filter from the users and check it against the MONTH_NAMES list
     month = input('Which month do you want to report on? (January to June, or ENTER for any):').lower() or 'any'
-    while month not in months and month != 'any':
+    while month not in MONTH_NAMES and month != 'any':
         month = input('Please input a valid month? (or ENTER for any):').lower() or 'any'
     
-    #get the weekday filter from the users and check if against the days list
+    #get the weekday filter from the users and check if against the DAY_NAMES list
     day = input('Which day of the week do you want to report on? (or ENTER for any):').lower() or 'any'
-    while day not in days and day != 'any':
+    while day not in DAY_NAMES and day != 'any':
         day = input('Please input a valid weekday? (or ENTER for any):').lower() or 'any'
         
     return city, month, day
@@ -48,12 +48,12 @@ def load_data(city, month, day):
 
     # filter by month if applicable
     if month != 'any':
-        month = months.index(month)+1
+        month = MONTH_NAMES.index(month)+1
         df = df.loc[df['month'] == month]
     
     # filter by day of week if applicable
     if day != 'any':
-        day = days.index(day)
+        day = DAY_NAMES.index(day)
         df = df.loc[df['day_of_week'] == day]
     
     print("\nThis took %s seconds to load." % (time.time() - start_time))
@@ -83,13 +83,13 @@ def time_stats(df):
     if month == 'any':
         month_num = df['month'].mode()[0]
         monthly_trips = df['month'].value_counts()[month_num]
-        print('In {} (Month {}) ({} trips)'.format(months[month_num-1].title(),month_num,monthly_trips))
+        print('In {} (Month {}) ({} trips)'.format(MONTH_NAMES[month_num-1].title(),month_num,monthly_trips))
 
     # display the most common day of week if a weekday filter was not chosen
     if day == 'any':
         day_num = df['day_of_week'].mode()[0]
         daily_trips = df['day_of_week'].value_counts()[day_num]
-        print('On {} (Day {}) ({} trips)'.format(days[day_num-1].title(),day_num,daily_trips))
+        print('On {} (Day {}) ({} trips)'.format(DAY_NAMES[day_num-1].title(),day_num,daily_trips))
         
     # display the most common start hour
     hour = df['hour'].mode()[0]
