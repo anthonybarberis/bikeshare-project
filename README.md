@@ -5,10 +5,12 @@ June 29th, 2019
 Project 3 - Post Your Work on GitHub
 
 ### Description
-Describe what your project is about and what it does
+Demonstrate understanding of Git and GitHib by posting project 2 (Explore US Bikeshare Data) to GitHub
 
 ### Files used
-Include the files used
+bikeshare.py
+README.md
+.gitignore
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
