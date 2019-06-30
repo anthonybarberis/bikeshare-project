@@ -74,7 +74,7 @@ def section_intro(intro_line):
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
-    #call the section_intro function
+    # call the section_intro function
     section_intro('people most frequently travel')
     
     start_time = time.time()
@@ -102,12 +102,12 @@ def time_stats(df):
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
     
-    #call the section_intro function
+    # call the section_intro function
     section_intro('the most popular stations are')
     
     start_time = time.time()
     
-    #create trip column from start and end stations
+    # create trip column from start and end stations
     df['trip'] = df['Start Station'] + ' to ' + df['End Station']
     
     # display most commonly used start station
@@ -132,7 +132,7 @@ def station_stats(df):
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
-    #call the section_intro function
+    # call the section_intro function
     section_intro('time travelled is')
     
     start_time = time.time()
@@ -159,7 +159,7 @@ def user_stats(df):
     """Displays statistics on bikeshare users."""
 
 
-    #call the section_intro function
+    # call the section_intro function
     section_intro('user demographics are')
     
     start_time = time.time()
