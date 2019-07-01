@@ -1,16 +1,17 @@
-### Date created
-June 29th, 2019
+## Date created
+June 1st, 2019
 
-### Project Title
-Project 3 - Post Your Work on GitHub
+## Project Title
+My First Python Project - Explore US Bikeshare Data
 
-### Description
-Demonstrate understanding of Git and GitHib by posting project 2 (Explore US Bikeshare Data) to GitHub
+## Description
+Explore US bikeshare data from [Motivate](https://www.motivateco.com/) using guided command-line interface. This was Project 2 in my Programming for Data Science Nanodegree from Udacity.
 
-### Files used
-bikeshare.py
-README.md
-.gitignore
+## Files used
+`bikeshare.py`  
+`data/chicago.csv`  
+`data/new_york_city.csv`  
+`data/washington.csv`  
 
-### Credits
-Udacity.com - Programming for Data Science Nanodegree
+## Credits
+[Udacity.com - Programming for Data Science Nanodegree](https://www.udacity.com/course/programming-for-data-science-nanodegree--nd104)
