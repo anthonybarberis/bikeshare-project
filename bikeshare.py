@@ -1,9 +1,9 @@
 import time
 import pandas as pd
 
-CITY_DATA = { 'chicago': 'chicago.csv',
-              'new york': 'new_york_city.csv',
-              'washington': 'washington.csv' }
+CITY_DATA = { 'chicago': 'data/chicago.csv',
+              'new york': 'data/new_york_city.csv',
+              'washington': 'data/washington.csv' }
 
 MONTH_NAMES = ['january', 'february', 'march', 'april', 'may', 'june']
 DAY_NAMES = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday']
