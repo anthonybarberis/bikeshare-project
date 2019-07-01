@@ -5,7 +5,7 @@ June 1st, 2019
 My First Python Project - Explore US Bikeshare Data
 
 ## Description
-Explore US bikeshare data from [Motivate](https://www.motivateco.com/) using guided command-line interface. This was Project 2 in my Programming for Data Science Nanodegree from Udacity.
+Explore US bikeshare data from [Motivate](https://www.motivateco.com/) using a guided command-line interface. This was Project 2 in my Programming for Data Science Nanodegree from Udacity.
 
 ## Files used
 `bikeshare.py`  
